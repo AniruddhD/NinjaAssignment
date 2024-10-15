@@ -1,0 +1,26 @@
+pwd
+mkdir linux
+mkdir linux/Assignment-01
+mkdir /tmp/dir1
+mkdir /tmp/dir2 /tmp/dir3
+rmdir /tmp/dir3/
+touch /tmp/first-name
+echo "This is my first line " > /tmp/first-name
+echo "this is a additional content " >> /tmp/first-name
+echo "Dangarh is my last name" > dangarh
+echo "this is line at the beginning" | cat - dangarh > temp && mv temp dangarh
+for i in {1..10}; do echo "this is line $i" >> dangarh; done
+head -n 5 dangarh
+tail -n 2 dangarh
+head -n 6 dangarh | tail -n 1
+head -n 8 dangarh | tail -n +3
+ls -a /tmp/
+ls -p /tmp/ | grep -v /
+ls -l /tmp/ | grep "^d"
+cp dangarh /tmp/dir2/ 
+mv /tmp/dir2/dangarh /tmp/dir2/dangarh.copy
+mv /tmp/first-name /tmp/first-name1
+mv /tmp/dir2/dangarh /tmp/dir1/
+> /tmp/dir2/dangarh.copy
+rm /tmp/dir2/dangarh.copy
+
